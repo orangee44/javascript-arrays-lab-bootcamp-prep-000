@@ -28,4 +28,12 @@ function prependKitten(name) {
   return moreKittens;
 }
 
+function removeLastKitten() {
+  
+}
+
+  1) Arrays removeLastKitten() removes the last kitten in the kittens array andreturns a new array, leaving the kittens array unchanged:
+     ReferenceError: removeLastKitten is not defined
+      at Context.<anonymous> (test/index-test.js:61:7)
+
 
