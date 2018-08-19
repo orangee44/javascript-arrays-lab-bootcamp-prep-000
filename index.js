@@ -24,7 +24,8 @@ function appendKitten(name) {
 }
 
 function prependKitten(name) {
-  var moreKittens = []
+  var moreKittens = [name, ...kittens];
+  return moreKittens;
 }
 
   1) Arrays prependKitten(name) prepends a kitten to the kittens array and returns a new array, leaving the kittens array unchanged:
