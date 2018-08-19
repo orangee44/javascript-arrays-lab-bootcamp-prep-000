@@ -29,16 +29,16 @@ function prependKitten(name) {
 }
 
 function removeLastKitten() {
-  var lessKittens = kittens.slice(1)
+  var lessKittens = kittens.slice(0, kittens.length -1);
+  return lessKittens;
 }
 
   1) Arrays removeLastKitten() removes the last kitten in the kittens array andreturns a new array, leaving the kittens array unchanged:
      ReferenceError: removeLastKitten is not defined
       at Context.<anonymous> (test/index-test.js:61:7)
 
-var cats = ["Milo", "Garfield", "Otis"]
+var iceCreams = ["chocolate", "vanilla", "raspberry"]
  
-cats.slice(1) // ["Garfield", "Otis"]
+iceCreams.slice(0, iceCreams.length - 1) // ["chocolate", "vanilla"]
  
-cats // ["Milo", "Garfield", "Otis"]
-
+iceCreams // ["chocolate", "vanilla", "raspberry"]
